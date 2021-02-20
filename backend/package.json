@@ -9,6 +9,11 @@
     "start": "ts-node ./src/app.ts",
     "test": "eslint . --ext .ts"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "author": "web-lizzard",
   "license": "ISC",
   "dependencies": {
@@ -20,6 +25,8 @@
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
     "eslint": "^7.20.0",
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
     "nodemon": "^2.0.7",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.5"
